@@ -1,0 +1,15 @@
+package com.taotao.service.impl;
+
+import java.util.List;
+
+import com.taotao.common.pojo.EasyUITreeNode;
+
+public class ItemCartService implements com.taotao.service.ItemCartService {
+
+	@Override
+	public List<EasyUITreeNode> getItemCatList(Long parentId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

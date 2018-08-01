@@ -1,0 +1,10 @@
+package com.taotao.jedis;
+
+import redis.clients.jedis.Jedis;
+
+public class JedisTest {
+	public void testJedisSingle() {
+		Jedis jedis = new Jedis();
+		jedis.get("");
+	}
+}

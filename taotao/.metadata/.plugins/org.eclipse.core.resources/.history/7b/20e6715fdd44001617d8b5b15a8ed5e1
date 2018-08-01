@@ -1,0 +1,9 @@
+package com.taotao.controller;
+
+/***
+ * 内容分类管理
+ *
+ */
+public class ContentCategoryController {
+
+}

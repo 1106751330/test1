@@ -1,0 +1,20 @@
+package com.taotao.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.taotao.service.ItemCartService;
+
+/**
+ * 商品分类管理
+ * @author quan
+ *
+ */
+@Controller
+public class ItemCartController {
+	
+	@Autowired
+	private ItemCartService itemCartService;
+	
+	
+}

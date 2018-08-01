@@ -1,0 +1,39 @@
+package com.taotao.service.impl;
+
+import java.util.List;
+
+import com.alibaba.dubbo.config.annotation.Service;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.taotao.common.pojo.EasyUIDataGridResult;
+import com.taotao.mapper.TbItemMapper;
+import com.taotao.pojo.TbItem;
+import com.taotao.pojo.TbItemExample;
+import com.taotao.service.ItemService;
+
+
+/**
+ * 商品管理
+ */
+@Service
+public class ItemServiceImpl implements ItemService {
+	
+	private TbItemMapper itemMapper;
+	
+	/*
+	 * 分业查询 
+	 */
+	@Override
+	public EasyUIDataGridResult getItemList(int page, int rows) {
+		//分页处理
+		PageHelper.startPage(page, rows);
+		//执行查询
+		TbItemExample example = new TbItemExample();
+		List<TbItem> list = itemMapper.selectByExample(example);
+		EasyUIDataGridResult result = new EasyUIDataGridResult();
+		result.setRows(list);
+		PageInfo<TbItem> pageinfo = new PageInfo<>(list);
+		result.setTotal(pageinfo.getTotal());
+		return null;
+	}
+}

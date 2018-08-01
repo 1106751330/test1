@@ -1,0 +1,12 @@
+package com.taotao.jedis;
+
+import redis.clients.jedis.Jedis;
+
+public class JedisTest {
+	public void testJedisSingle() {
+		Jedis jedis = new Jedis("192.168.25.129",6379);
+		jedis.set("mytest","1000");
+		String value = jedis.get("mytest");
+		System.out.println(value);
+	}
+}

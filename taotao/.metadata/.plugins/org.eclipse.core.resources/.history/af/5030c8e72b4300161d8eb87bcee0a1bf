@@ -1,0 +1,33 @@
+package com.taotao.mybatis.pagehelper;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.alibaba.dubbo.container.page.PageHandler;
+import com.github.pagehelper.PageHelper;
+import com.taotao.mapper.TbItemMapper;
+import com.taotao.pojo.TbItem;
+import com.taotao.pojo.TbItemExample;
+
+public class TestPageHelper {
+	
+	public static void main(String[] args) {
+		//初始化spring容器
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-dao.xml");
+		
+		//从容器中获得mapper代理对象
+		TbItemMapper itemMapper = applicationContext.getBean(TbItemMapper.class);
+		
+		//执行查询
+		TbItemExample example = new TbItemExample();
+		
+		//分页处理
+		PageHelper.startPage(1, 30);
+		List<TbItem> lists = itemMapper.selectByExample(example);
+		
+		//取分业务信息 
+		
+	}
+}

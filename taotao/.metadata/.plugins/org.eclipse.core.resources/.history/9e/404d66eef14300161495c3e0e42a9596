@@ -1,0 +1,12 @@
+package com.taotao.fdfs;
+
+import org.junit.Test;
+
+public class TestFastDfs {
+	
+	@Test
+	public void testUpload() {
+		//创建一个配置文件fastdfs.conf 配置文件的内容就是指定Trankerserver的地址
+		
+	}
+}

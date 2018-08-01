@@ -1,0 +1,20 @@
+package com.taotao.service.impl;
+
+import java.util.List;
+
+import com.alibaba.dubbo.config.annotation.Service;
+import com.taotao.pojo.TbItem;
+import com.taotao.service.ItemService;
+
+
+/**
+ * 商品管理
+ */
+@Service
+public class ItemServiceImpl implements ItemService {
+
+	@Override
+	public List<TbItem> getItemList() {
+		return null;
+	}
+}

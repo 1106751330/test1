@@ -1,0 +1,10 @@
+package com.taotao.content.service;
+
+/**
+ * 内容管理的服务
+ * @author quan
+ *
+ */
+public interface ContentService {
+
+}

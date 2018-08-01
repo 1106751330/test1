@@ -1,0 +1,28 @@
+package com.taotao.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.EasyUITreeNode;
+import com.taotao.mapper.TbItemCatMapper;
+import com.taotao.pojo.TbItemCatExample;
+import com.taotao.pojo.TbItemCatExample.Criteria;
+
+@Service
+public class ItemCartService implements com.taotao.service.ItemCartService {
+	
+	@Autowired
+	private TbItemCatMapper ibItemCatMapper;
+	
+	@Override
+	public List<EasyUITreeNode> getItemCatList(Long parentId) {
+		//根据父节点id查询子节点列表
+		TbItemCatExample example = new TbItemCatExample();
+		Criteria criteria = example.createCriteria();
+		
+		return null;
+	}
+
+}

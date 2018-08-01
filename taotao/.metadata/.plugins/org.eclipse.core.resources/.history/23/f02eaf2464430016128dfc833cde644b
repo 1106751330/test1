@@ -1,0 +1,13 @@
+package com.taotao.controller;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * 商品分类管理
+ * @author quan
+ *
+ */
+@Controller
+public class ItemCartController {
+	
+}
