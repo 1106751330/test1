@@ -1,8 +1,0 @@
-package com.taotao.controller;
-
-/**
- * 商品管理
- * */
-public class ItemController {
-
-}

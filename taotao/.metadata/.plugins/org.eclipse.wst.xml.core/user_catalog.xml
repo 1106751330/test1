@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-  <system systemId="http://code.alibabatech.com/schema/dubbo/dubbo.xsd" uri="file:///F:/淘淘商城/教案和资料/01.参考资料/dubbo/dubbo.xsd"/>
-  <system systemId="http://www.springframework.org/schema/aop/spring-aop-4.2.xsd" uri="file:///F:/淘淘商城/教案和资料/01.参考资料/spring约束/spring-aop-4.2.xsd"/>
-  <system systemId="http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd" uri="file:///F:/淘淘商城/教案和资料/01.参考资料/spring约束/spring-mvc-4.2.xsd"/>
-</catalog>
